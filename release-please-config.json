@@ -11,7 +11,7 @@
     }
   },
   "extra-files": [
-    "./composeApp/build.gradle.kts"
+    "composeApp/build.gradle.kts"
   ],
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
 }
