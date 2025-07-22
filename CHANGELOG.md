@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.0.0...v1.0.1) (2025-07-22)
+
+
+### Bug Fixes
+
+* update versionName to 1.0.0 in build.gradle.kts ([34b7b7a](https://github.com/kevinah95/PrototypeFirebaseRelease/commit/34b7b7a883f4bd64431604ffef25edde27a93dcf))
+
 ## 1.0.0 (2025-07-22)
 
 
