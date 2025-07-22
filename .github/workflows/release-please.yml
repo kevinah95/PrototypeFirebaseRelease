@@ -13,20 +13,21 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Set up JDK
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-      - name: Build Android App
-        run: ./gradlew :composeApp:assembleRelease
       - uses: googleapis/release-please-action@v4
         id: release
         with:
           token: ${{ secrets.RELEASE_PLEASE_PAT }}
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
+      - name: Set up JDK
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - name: Build Android App
+        if: ${{ steps.release.outputs.release_created }}
+        run: ./gradlew :composeApp:assembleRelease
       - name: Upload Release Artifact
         if: ${{ steps.release.outputs.release_created }}
         env:
