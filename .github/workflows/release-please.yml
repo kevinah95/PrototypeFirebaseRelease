@@ -40,6 +40,6 @@ jobs:
         with:
           appId: io.github.kevinah95
           serviceCredentialsFileContent: ${{ secrets.FIREBASE_CREDENTIAL_FILE_CONTENT }}
-          testers: kevinah95@gmail.com
-          file: composeApp/build/outputs/apk/release/composeApp-release-unsigned.apk
+          testers: "kevinah95@gmail.com"
+          file: ./composeApp/build/outputs/apk/release/composeApp-release-unsigned.apk
           releaseNotes: ${{ format('Release {0}', steps.release.outputs.tag_name) }}
