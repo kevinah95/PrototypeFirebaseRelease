@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.3.1...v1.4.0) (2025-07-23)
+
+
+### Features
+
+* update release workflow to create google-services.json and adjust release notes ([2737e29](https://github.com/kevinah95/PrototypeFirebaseRelease/commit/2737e29f6ea943ca412853bdd27aef29073fbc6d))
+
 ## [1.3.1](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.3.0...v1.3.1) (2025-07-23)
 
 
