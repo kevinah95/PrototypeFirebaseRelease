@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.2.1...v1.3.0) (2025-07-23)
+
+
+### Features
+
+* add Google Services plugin and configuration file for Firebase integration ([056b01d](https://github.com/kevinah95/PrototypeFirebaseRelease/commit/056b01df40d9a8bc75329065ec27ddd42652debd))
+
 ## [1.2.1](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.2.0...v1.2.1) (2025-07-23)
 
 
