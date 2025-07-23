@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.1.0...v1.1.1) (2025-07-22)
+
+
+### Bug Fixes
+
+* remove redundant checkout step and streamline release process ([a48ec17](https://github.com/kevinah95/PrototypeFirebaseRelease/commit/a48ec17034fe1cdc51bd8bca0d07ef8824be00c9))
+
 ## [1.1.0](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.0.1...v1.1.0) (2025-07-22)
 
 
