@@ -34,7 +34,7 @@ jobs:
       - name: Firebase App Distribution
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
-          appId: io.github.kevinah95
+          appId: ${{ secrets.FIREBASE_APP_ID }}
           serviceCredentialsFileContent: ${{ secrets.FIREBASE_CREDENTIAL_FILE_CONTENT }}
           testers: "kevinah95@gmail.com"
           file: ./composeApp/build/outputs/apk/release/composeApp-release-unsigned.apk
