@@ -1,0 +1,41 @@
+name: Firebase App Distribution
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      release_notes:
+        description: 'Release notes for this build'
+        required: false
+        default: 'Manual build'
+        type: string
+
+jobs:
+  distribute:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
+        
+      - name: Build Android App
+        run: ./gradlew :composeApp:assembleRelease
+        
+      - name: Firebase App Distribution
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        with:
+          appId: io.github.kevinah95
+          serviceCredentialsFileContent: ${{ secrets.FIREBASE_CREDENTIAL_FILE_CONTENT }}
+          testers: kevinah95@gmail.com
+          file: composeApp/build/outputs/apk/release/composeApp-release-unsigned.apk
+          releaseNotes: ${{ github.event.inputs.release_notes || format('Release {0}', github.event.release.tag_name) }}

@@ -34,3 +34,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh release upload ${{ steps.release.outputs.tag_name }} ./composeApp/build/outputs/apk/release/composeApp-release-unsigned.apk
+      - name: Firebase App Distribution
+        if: ${{ steps.release.outputs.release_created }}
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        with:
+          appId: io.github.kevinah95
+          serviceCredentialsFileContent: ${{ secrets.FIREBASE_CREDENTIAL_FILE_CONTENT }}
+          testers: kevinah95@gmail.com
+          file: composeApp/build/outputs/apk/release/composeApp-release-unsigned.apk
+          releaseNotes: ${{ format('Release {0}', steps.release.outputs.tag_name) }}
