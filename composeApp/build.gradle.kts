@@ -47,7 +47,8 @@ kotlin {
             implementation(libs.androidx.lifecycle.runtimeCompose)
             implementation(projects.shared)
             implementation(project.dependencies.platform(libs.firebase.bom))
-
+            implementation(libs.firebase.crashlytics.ndk)
+            implementation(libs.firebase.analytics)
 
         }
         commonTest.dependencies {
