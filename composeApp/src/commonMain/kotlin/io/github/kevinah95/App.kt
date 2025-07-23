@@ -39,6 +39,10 @@ fun App() {
                     Text("Compose L11: $greeting")
                 }
             }
+            Button(onClick = { throw RuntimeException("Test Crash") }) {
+                Text("Test Crash")
+            }
+
         }
     }
 }
