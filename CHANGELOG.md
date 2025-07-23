@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.1.2...v1.1.3) (2025-07-23)
+
+
+### Bug Fixes
+
+* update release artifact path to use unsigned APK ([782b514](https://github.com/kevinah95/PrototypeFirebaseRelease/commit/782b5148b63124464af1945c6a813412b131a73f))
+
 ## [1.1.2](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.1.1...v1.1.2) (2025-07-23)
 
 
