@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.1.4...v1.2.0) (2025-07-23)
+
+
+### Features
+
+* add Firebase App Distribution workflow and setup instructions ([14e86d7](https://github.com/kevinah95/PrototypeFirebaseRelease/commit/14e86d78586be1e72565ca8b8c6bfe311e47f292))
+
 ## [1.1.4](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.1.3...v1.1.4) (2025-07-23)
 
 
