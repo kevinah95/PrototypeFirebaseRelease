@@ -20,6 +20,9 @@ jobs:
           token: ${{ secrets.RELEASE_PLEASE_PAT }}
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
+      - name: Create google-services.json
+        if: ${{ steps.release.outputs.release_created }}
+        run: echo '${{ secrets.GOOGLE_SERVICES_JSON }}' > ./composeApp/google-services.json
       - name: Set up JDK
         if: ${{ steps.release.outputs.release_created }}
         uses: actions/setup-java@v4
@@ -42,4 +45,4 @@ jobs:
           serviceCredentialsFileContent: ${{ secrets.FIREBASE_CREDENTIAL_FILE_CONTENT }}
           testers: "kevinah95@gmail.com"
           file: ./composeApp/build/outputs/apk/release/composeApp-release-unsigned.apk
-          releaseNotes: ${{ format('Release {0}', steps.release.outputs.tag_name) }}
+          releaseNotes: ${{ steps.release.outputs.body }}
