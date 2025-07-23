@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.6.0...v1.7.0) (2025-07-23)
+
+
+### Features
+
+* add Firebase Crashlytics NDK and Analytics dependencies ([73eebf7](https://github.com/kevinah95/PrototypeFirebaseRelease/commit/73eebf7315a8087187fc8238fcbd543838dab1c0))
+
 ## [1.6.0](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.5.0...v1.6.0) (2025-07-23)
 
 
