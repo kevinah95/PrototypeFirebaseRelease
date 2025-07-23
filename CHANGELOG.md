@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.1.3...v1.1.4) (2025-07-23)
+
+
+### Bug Fixes
+
+* update greeting text to include line number ([568eb0f](https://github.com/kevinah95/PrototypeFirebaseRelease/commit/568eb0f09d19ed789414594d7aaf0cceacd301e5))
+
 ## [1.1.3](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.1.2...v1.1.3) (2025-07-23)
 
 
