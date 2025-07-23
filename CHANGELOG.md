@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.2.0...v1.2.1) (2025-07-23)
+
+
+### Bug Fixes
+
+* update Firebase App Distribution workflow to use correct file path ([06b3b90](https://github.com/kevinah95/PrototypeFirebaseRelease/commit/06b3b905e2eed138dc16f9d7c6e1880655cc0e44))
+
 ## [1.2.0](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.1.4...v1.2.0) (2025-07-23)
 
 
