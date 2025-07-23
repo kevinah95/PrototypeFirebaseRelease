@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.4.0...v1.5.0) (2025-07-23)
+
+
+### Features
+
+* add Firebase Crashlytics dependency and update .gitignore for google-services.json ([a58e2c3](https://github.com/kevinah95/PrototypeFirebaseRelease/commit/a58e2c3205abfc5cdde72dd0a97de7051dfc98be))
+
 ## [1.4.0](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.3.1...v1.4.0) (2025-07-23)
 
 
