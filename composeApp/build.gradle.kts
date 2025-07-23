@@ -8,7 +8,7 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.googleServices)
-    //alias(libs.plugins.fire)
+    alias(libs.plugins.firebaseCrashlytics)
 }
 
 kotlin {
@@ -48,8 +48,7 @@ kotlin {
             implementation(projects.shared)
             implementation(project.dependencies.platform(libs.firebase.bom))
 
-            // Add the dependency for the Firebase SDK for Google Analytics
-            implementation(libs.firebase.analytics)
+
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
