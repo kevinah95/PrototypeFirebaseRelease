@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.5.0...v1.6.0) (2025-07-23)
+
+
+### Features
+
+* add Firebase Crashlytics plugin to build.gradle.kts files ([9f9c25d](https://github.com/kevinah95/PrototypeFirebaseRelease/commit/9f9c25de37b5b12038f6fdde0f439a96865edf2d))
+
 ## [1.5.0](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.4.0...v1.5.0) (2025-07-23)
 
 
