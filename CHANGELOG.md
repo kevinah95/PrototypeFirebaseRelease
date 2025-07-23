@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.1.1...v1.1.2) (2025-07-23)
+
+
+### Bug Fixes
+
+* add missing checkout step in release workflow ([7c69f2a](https://github.com/kevinah95/PrototypeFirebaseRelease/commit/7c69f2a381083918d39ad1422d16c7d3fb6f28f9))
+
 ## [1.1.1](https://github.com/kevinah95/PrototypeFirebaseRelease/compare/v1.1.0...v1.1.1) (2025-07-22)
 
 
